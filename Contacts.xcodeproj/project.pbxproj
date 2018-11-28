@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		82B11B9721AC5F7F008D1C84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B11B9621AC5F7F008D1C84 /* AppDelegate.swift */; };
-		82B11B9921AC5F7F008D1C84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B11B9821AC5F7F008D1C84 /* ViewController.swift */; };
 		82B11B9C21AC5F7F008D1C84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B11B9A21AC5F7F008D1C84 /* Main.storyboard */; };
 		82B11B9E21AC5F80008D1C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B11B9D21AC5F80008D1C84 /* Assets.xcassets */; };
 		82B11BA121AC5F80008D1C84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B11B9F21AC5F80008D1C84 /* LaunchScreen.storyboard */; };
+		82B11BA921AC5FDD008D1C84 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B11BA821AC5FDD008D1C84 /* Contact.swift */; };
+		82B11BAD21AC60F8008D1C84 /* IIIContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B11BAC21AC60F8008D1C84 /* IIIContactController.m */; };
+		82B11BAF21AC61E1008D1C84 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B11BAE21AC61E1008D1C84 /* ContactsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82B11B9321AC5F7F008D1C84 /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B11B9621AC5F7F008D1C84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82B11B9821AC5F7F008D1C84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		82B11B9B21AC5F7F008D1C84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82B11B9D21AC5F80008D1C84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82B11BA021AC5F80008D1C84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82B11BA221AC5F80008D1C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82B11BA821AC5FDD008D1C84 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		82B11BAA21AC60F8008D1C84 /* Contacts-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Contacts-Bridging-Header.h"; sourceTree = "<group>"; };
+		82B11BAB21AC60F8008D1C84 /* IIIContactController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIIContactController.h; sourceTree = "<group>"; };
+		82B11BAC21AC60F8008D1C84 /* IIIContactController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IIIContactController.m; sourceTree = "<group>"; };
+		82B11BAE21AC61E1008D1C84 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +60,15 @@
 		82B11B9521AC5F7F008D1C84 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				82B11B9621AC5F7F008D1C84 /* AppDelegate.swift */,
-				82B11B9821AC5F7F008D1C84 /* ViewController.swift */,
+				82B11BA821AC5FDD008D1C84 /* Contact.swift */,
+				82B11BAB21AC60F8008D1C84 /* IIIContactController.h */,
+				82B11BAC21AC60F8008D1C84 /* IIIContactController.m */,
+				82B11BAE21AC61E1008D1C84 /* ContactsTableViewController.swift */,
+				82B11BAA21AC60F8008D1C84 /* Contacts-Bridging-Header.h */,
 				82B11B9A21AC5F7F008D1C84 /* Main.storyboard */,
-				82B11B9D21AC5F80008D1C84 /* Assets.xcassets */,
 				82B11B9F21AC5F80008D1C84 /* LaunchScreen.storyboard */,
+				82B11B9621AC5F7F008D1C84 /* AppDelegate.swift */,
+				82B11B9D21AC5F80008D1C84 /* Assets.xcassets */,
 				82B11BA221AC5F80008D1C84 /* Info.plist */,
 			);
 			path = Contacts;
@@ -90,12 +100,14 @@
 		82B11B8B21AC5F7F008D1C84 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = III;
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Lambda School";
 				TargetAttributes = {
 					82B11B9221AC5F7F008D1C84 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -135,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82B11B9921AC5F7F008D1C84 /* ViewController.swift in Sources */,
+				82B11BAD21AC60F8008D1C84 /* IIIContactController.m in Sources */,
+				82B11BA921AC5FDD008D1C84 /* Contact.swift in Sources */,
+				82B11BAF21AC61E1008D1C84 /* ContactsTableViewController.swift in Sources */,
 				82B11B9721AC5F7F008D1C84 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -290,6 +305,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Contacts/Contacts-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +325,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Contacts/Contacts-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
